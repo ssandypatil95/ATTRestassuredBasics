@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-22T08:32:39 IST" name="Default suite" finished-at="2023-06-22T08:32:43 IST" duration-ms="4273">
+    <groups>
+    </groups>
+    <test started-at="2023-06-22T08:32:39 IST" name="Default test" finished-at="2023-06-22T08:32:43 IST" duration-ms="4273">
+      <class name="basicrequest.GET_Request">
+        <test-method signature="getAllUser()[pri:0, instance:basicrequest.GET_Request@4a7f959b]" started-at="2023-06-22T08:32:39 IST" name="getAllUser" finished-at="2023-06-22T08:32:43 IST" duration-ms="4102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUser -->
+      </class> <!-- basicrequest.GET_Request -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
