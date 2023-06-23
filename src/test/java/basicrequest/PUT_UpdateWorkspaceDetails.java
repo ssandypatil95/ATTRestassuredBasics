@@ -27,7 +27,7 @@ public class PUT_UpdateWorkspaceDetails {
 				+ "    }\r\n"
 				+ "}")
 		
-		.header("x-api-key", "PMAK-649247a391dd760038ebbae5-207f6011b82179ae656d83cded68e7a595")
+		.header("x-api-key", "<api key>")
 		
 		.when()
 		
