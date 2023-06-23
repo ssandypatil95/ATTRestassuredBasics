@@ -1,17 +1,16 @@
 package basicrequest;
 
+import static io.restassured.RestAssured.given;
+
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.*;
-
-public class GET_Request {
-	
+public class GET_SingleUser {
 	
 	@Test
-	public void getAllUser()
+	public void getSingleUser()
 	{
 		RestAssured.baseURI = "https://reqres.in/";
 				
@@ -19,7 +18,7 @@ public class GET_Request {
 		
 						.when()
 		
-						.get("api/users?page=2")
+						.get("/api/users/2")
 		
 						.then()
 		

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-22T08:32:39 IST" name="Default suite" finished-at="2023-06-22T08:32:43 IST" duration-ms="4273">
+  <suite started-at="2023-06-23T08:31:21 IST" name="Default suite" finished-at="2023-06-23T08:31:26 IST" duration-ms="5238">
     <groups>
     </groups>
-    <test started-at="2023-06-22T08:32:39 IST" name="Default test" finished-at="2023-06-22T08:32:43 IST" duration-ms="4273">
-      <class name="basicrequest.GET_Request">
-        <test-method signature="getAllUser()[pri:0, instance:basicrequest.GET_Request@4a7f959b]" started-at="2023-06-22T08:32:39 IST" name="getAllUser" finished-at="2023-06-22T08:32:43 IST" duration-ms="4102" status="PASS">
+    <test started-at="2023-06-23T08:31:21 IST" name="Default test" finished-at="2023-06-23T08:31:26 IST" duration-ms="5238">
+      <class name="basicrequest.PUT_UpdateWorkspaceDetails">
+        <test-method signature="updateDetails()[pri:0, instance:basicrequest.PUT_UpdateWorkspaceDetails@4a7f959b]" started-at="2023-06-23T08:31:21 IST" name="updateDetails" finished-at="2023-06-23T08:31:26 IST" duration-ms="5075" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllUser -->
-      </class> <!-- basicrequest.GET_Request -->
+        </test-method> <!-- updateDetails -->
+      </class> <!-- basicrequest.PUT_UpdateWorkspaceDetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
