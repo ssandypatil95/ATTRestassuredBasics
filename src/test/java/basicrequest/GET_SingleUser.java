@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
 public class GET_SingleUser {
@@ -40,6 +41,12 @@ public class GET_SingleUser {
 	
 	System.out.println(time);
 	
+	
+	Headers headerinfo = response.getHeaders();
+	
+	String headervalues = headerinfo.toString();
+	
+	System.out.println(headervalues);
 	}
 
 }
