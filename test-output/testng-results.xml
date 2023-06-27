@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-26T08:32:16 IST" name="Default suite" finished-at="2023-06-26T08:32:22 IST" duration-ms="6006">
+  <suite started-at="2023-06-27T08:33:18 IST" name="Default suite" finished-at="2023-06-27T08:33:25 IST" duration-ms="7653">
     <groups>
     </groups>
-    <test started-at="2023-06-26T08:32:16 IST" name="Default test" finished-at="2023-06-26T08:32:22 IST" duration-ms="6006">
-      <class name="basicrequest.FetchDataFromComplexJson">
-        <test-method signature="fetchDetailsFromJson()[pri:0, instance:basicrequest.FetchDataFromComplexJson@4a7f959b]" started-at="2023-06-26T08:32:16 IST" name="fetchDetailsFromJson" finished-at="2023-06-26T08:32:22 IST" duration-ms="5893" status="PASS">
+    <test started-at="2023-06-27T08:33:18 IST" name="Default test" finished-at="2023-06-27T08:33:25 IST" duration-ms="7653">
+      <class name="assertionsusage.ApplyAssertions">
+        <test-method signature="getUserDetails()[pri:0, instance:assertionsusage.ApplyAssertions@169e6180]" started-at="2023-06-27T08:33:18 IST" name="getUserDetails" finished-at="2023-06-27T08:33:25 IST" duration-ms="7529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fetchDetailsFromJson -->
-      </class> <!-- basicrequest.FetchDataFromComplexJson -->
+        </test-method> <!-- getUserDetails -->
+      </class> <!-- assertionsusage.ApplyAssertions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
