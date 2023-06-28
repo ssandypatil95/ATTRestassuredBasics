@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.*;
 
 public class CreateWorkspace {
 	
-	
+
 	@Test
 	public void createWorkpace()
 	{

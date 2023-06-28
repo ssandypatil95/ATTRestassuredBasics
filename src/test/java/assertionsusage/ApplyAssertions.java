@@ -22,7 +22,7 @@ public class ApplyAssertions {
 		
 		given()
 		
-		.header("x-api-key", "api key")
+		.header("x-api-key", "PMAK-649b8f542e0e150039ce53ab-df952b0fae2117528d2af1826d5560905c")
 		
 		.when()
 		
@@ -38,13 +38,19 @@ public class ApplyAssertions {
 		
 		.statusCode(200)
 				
-		.body("workspaces.name", contains("Team Workspace", "My Workspace", "My Workspace", "ATTWorkspace", "TestWorkspace"))
+		.body("workspaces.name", contains("Team Workspace", "My Workspace", "My Workspace", "ATTWorkspace", "TestWorkspace", "Test Workspace"))
 		
 		
 		.body("workspaces.name", hasItem("My Workspace"))// failed as hasItem parameter doesnt match with any of the values
 		
 		
-		.body("workspaces.name", containsInAnyOrder( "My Workspace","Team Workspace", "My Workspace", "ATTWorkspace", "TestWorkspace"));
+		.body("workspaces.name", containsInAnyOrder("My Workspace","Team Workspace", "My Workspace", "ATTWorkspace", "TestWorkspace", "Test Workspace"))
+		
+		.body("workspaces[1]", hasKey("id"))// if we have id available then it will mark the case as passed
+	
+	
+		.body("workspaces[1]", hasEntry("id", "8e12339e-c561-4326-90db-29384205056e"));
+	
 	}
 	
 	
