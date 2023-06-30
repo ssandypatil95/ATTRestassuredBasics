@@ -24,7 +24,7 @@ public class ReqAndResponseSpecBuilder {
 		RequestSpecBuilder requestspecbuilder = new RequestSpecBuilder();
 		
 		requestspecbuilder.setBaseUri("https://api.getpostman.com");
-		requestspecbuilder.addHeader("x-api-key", "PMAK-649b8f542e0e150039ce53ab-df952b0fae2117528d2af1826d5560905c");
+		requestspecbuilder.addHeader("x-api-key", "PMAK-649e32e4bad26a00385ec244-e5462dda14c5943e68ebed9a444c9e25d0");
 		requestspecbuilder.log(LogDetail.ALL);
 		requestspecification = requestspecbuilder.build();
 		
@@ -42,9 +42,11 @@ public class ReqAndResponseSpecBuilder {
 	
 	
 	
-	@Test
+	@Test(priority = 1)
 	public void getPostManWorkspaces() {
-							given(requestspecification)
+							given()
+							
+							.spec(requestspecification)
 						
 							.when()
 
@@ -59,6 +61,27 @@ public class ReqAndResponseSpecBuilder {
 							.response();
 	
 
+	}
+	
+	@Test(priority = 2)
+	public void getSpecificWorkspaceDetails()
+	{
+		given()
+		
+		.spec(requestspecification)
+		
+		.when()
+
+		.get("/workspaces/8e12339e-b561-4326-90db-29384205056e")
+
+		.then()
+		
+		.spec(responsespecification)
+
+		.extract()
+
+		.response();
+		
 	}
 
 

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assertionsusage.ApplyAssertions">
+      <class name="pathandqueryparam.PathParameters">
         <methods>
-          <include name="getUserDetails"/>
+          <include name="getSinglePageUser"/>
         </methods>
-      </class> <!-- assertionsusage.ApplyAssertions -->
+      </class> <!-- pathandqueryparam.PathParameters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

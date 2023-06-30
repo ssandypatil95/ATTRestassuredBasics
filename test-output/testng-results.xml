@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-28T08:24:50 IST" name="Default suite" finished-at="2023-06-28T08:24:57 IST" duration-ms="6485">
+  <suite started-at="2023-06-30T08:37:48 IST" name="Default suite" finished-at="2023-06-30T08:37:53 IST" duration-ms="4529">
     <groups>
     </groups>
-    <test started-at="2023-06-28T08:24:50 IST" name="Default test" finished-at="2023-06-28T08:24:57 IST" duration-ms="6485">
-      <class name="reqandresponsespecbuilder.ReqAndResponseSpecBuilder">
-        <test-method is-config="true" signature="initReqAndResSpec()[pri:0, instance:reqandresponsespecbuilder.ReqAndResponseSpecBuilder@ffaa6af]" started-at="2023-06-28T08:24:50 IST" name="initReqAndResSpec" finished-at="2023-06-28T08:24:52 IST" duration-ms="1343" status="PASS">
+    <test started-at="2023-06-30T08:37:48 IST" name="Default test" finished-at="2023-06-30T08:37:53 IST" duration-ms="4529">
+      <class name="pathandqueryparam.QueryParameter">
+        <test-method signature="getAllUsers()[pri:0, instance:pathandqueryparam.QueryParameter@169e6180]" started-at="2023-06-30T08:37:49 IST" name="getAllUsers" finished-at="2023-06-30T08:37:53 IST" duration-ms="4432" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initReqAndResSpec -->
-        <test-method signature="getPostManWorkspaces()[pri:0, instance:reqandresponsespecbuilder.ReqAndResponseSpecBuilder@ffaa6af]" started-at="2023-06-28T08:24:52 IST" name="getPostManWorkspaces" finished-at="2023-06-28T08:24:57 IST" duration-ms="5028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPostManWorkspaces -->
-      </class> <!-- reqandresponsespecbuilder.ReqAndResponseSpecBuilder -->
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- pathandqueryparam.QueryParameter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
