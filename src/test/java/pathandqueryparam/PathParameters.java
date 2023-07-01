@@ -20,8 +20,7 @@ public class PathParameters {
 		 given()
 		 
 		 .pathParam("pagevalue", "2")
-		 
-		 
+		 		 
 		 .log().all()
 		
 		.when()
