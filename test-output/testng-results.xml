@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-01T08:33:29 IST" name="Default suite" finished-at="2023-07-01T08:33:35 IST" duration-ms="6318">
+  <suite started-at="2023-07-03T07:51:33 IST" name="Default suite" finished-at="2023-07-03T07:51:41 IST" duration-ms="8687">
     <groups>
     </groups>
-    <test started-at="2023-07-01T08:33:29 IST" name="Default test" finished-at="2023-07-01T08:33:35 IST" duration-ms="6318">
-      <class name="uploadanddownload.UploadFile">
-        <test-method signature="getRequest()[pri:0, instance:uploadanddownload.UploadFile@169e6180]" started-at="2023-07-01T08:33:29 IST" name="getRequest" finished-at="2023-07-01T08:33:35 IST" duration-ms="6184" status="PASS">
+    <test started-at="2023-07-03T07:51:33 IST" name="Default test" finished-at="2023-07-03T07:51:41 IST" duration-ms="8687">
+      <class name="sendingbodyasobject.POST_ComplexJson">
+        <test-method signature="createEntity()[pri:0, instance:sendingbodyasobject.POST_ComplexJson@169e6180]" started-at="2023-07-03T07:51:33 IST" name="createEntity" finished-at="2023-07-03T07:51:41 IST" duration-ms="8557" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRequest -->
-      </class> <!-- uploadanddownload.UploadFile -->
+        </test-method> <!-- createEntity -->
+      </class> <!-- sendingbodyasobject.POST_ComplexJson -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
