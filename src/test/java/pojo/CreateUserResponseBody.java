@@ -2,6 +2,7 @@ package pojo;
 
 public class CreateUserResponseBody {
 	
+	
 	Integer code;
 	String type;
 	String message;
