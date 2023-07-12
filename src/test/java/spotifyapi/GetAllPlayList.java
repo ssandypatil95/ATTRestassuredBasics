@@ -26,11 +26,8 @@ public class GetAllPlayList {
 		.log().all()
 		
 		.extract()
-		
-		
-		
+				
 		.response();
-	
 	}
 
 }

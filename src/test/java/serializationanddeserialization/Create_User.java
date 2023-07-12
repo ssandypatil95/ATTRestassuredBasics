@@ -19,13 +19,13 @@ public class Create_User {
 		
 		CreateUserRequestBody requestObject = new CreateUserRequestBody();
 		
-		requestObject.setId(0);
-		requestObject.setUsername("Pojouser");
-		requestObject.setFirstName("Pojo");
-		requestObject.setLastName("Classes");
-		requestObject.setEmail("pojo.classes@gmail.com");
+		
+		requestObject.setUsername("Pojouser2");
+		requestObject.setFirstName("Pojo2");
+		requestObject.setLastName("Classes2");
+		requestObject.setEmail("pojo.classes2@gmail.com");
 		requestObject.setPassword("Test@1234");
-		requestObject.setPhone("9988776655");
+		requestObject.setPhone("9988769655");
 		requestObject.setUserStatus(0);
 		
 		

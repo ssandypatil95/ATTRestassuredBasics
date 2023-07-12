@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pathandqueryparam.PathParameters">
+      <class name="spotifyapi.CreatePlaylist">
         <methods>
-          <include name="getSinglePageUser"/>
+          <include name="reqResSpec"/>
+          <include name="createPlayList"/>
         </methods>
-      </class> <!-- pathandqueryparam.PathParameters -->
+      </class> <!-- spotifyapi.CreatePlaylist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

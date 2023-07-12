@@ -26,6 +26,7 @@ public class ReqAndResponseSpecBuilder {
 		requestspecbuilder.setBaseUri("https://api.getpostman.com");
 		requestspecbuilder.addHeader("x-api-key", "PMAK-649e32e4bad26a00385ec244-e5462dda14c5943e68ebed9a444c9e25d0");
 		requestspecbuilder.log(LogDetail.ALL);
+	
 		requestspecification = requestspecbuilder.build();
 		
 		ResponseSpecBuilder responsespecbuilder = new ResponseSpecBuilder();

@@ -1,10 +1,13 @@
-package spotifyapi;
+package com.spotify.tests;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.spotify.pojo.Playlist;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -12,7 +15,9 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+
 public class CreatePlaylist {
+	
 	RequestSpecification requestspecification;
 	 ResponseSpecification    responsespecification;
 	
@@ -43,13 +48,15 @@ public class CreatePlaylist {
 	 public void createPlayList()
 	 {
 		 
-		 given(requestspecification)
+		 Playlist reqplaylist = new Playlist();
 		 
-		 .body("{\r\n"
-		 		+ "    \"name\": \"Deshbhakti songs\",\r\n"
-		 		+ "    \"description\": \"patriotic collection\",\r\n"
-		 		+ "    \"public\": false\r\n"
-		 		+ "}")
+		 reqplaylist.setName("Bhajan songs");
+		 reqplaylist.setDescription("This is bhajan collection");
+		 reqplaylist.setPublic(false);
+		 
+	Playlist responseplaylist = given(requestspecification)
+		 
+		 .body(reqplaylist)
 		 
 		 .when()
 		 
@@ -59,7 +66,19 @@ public class CreatePlaylist {
 		 
 		 .spec(responsespecification)
 		 
-		 .body("name", equalTo("Hits 2022"));
+		 .extract()
+		 
+		 .response()
+		 
+		 .as(Playlist.class);
+	
+	
+		 
+	String namevalue = reqplaylist.getName();
+	
+	String nameresponse = responseplaylist.getName();
+	
+	Assert.assertEquals(namevalue, nameresponse);
 		 
 		 
 		 
