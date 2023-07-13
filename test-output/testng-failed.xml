@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="spotifyapi.CreatePlaylist">
+      <class name="com.spotify.tests.CreateAndGetPlayListUsingReusableCalls">
         <methods>
-          <include name="reqResSpec"/>
           <include name="createPlayList"/>
+          <include name="getAPlayList"/>
         </methods>
-      </class> <!-- spotifyapi.CreatePlaylist -->
+      </class> <!-- com.spotify.tests.CreateAndGetPlayListUsingReusableCalls -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
