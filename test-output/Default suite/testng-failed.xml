@@ -5,8 +5,7 @@
     <classes>
       <class name="com.spotify.tests.CreateAndGetPlayListUsingReusableCalls">
         <methods>
-          <include name="createPlayList"/>
-          <include name="getAPlayList"/>
+          <include name="changeUserPlaylist"/>
         </methods>
       </class> <!-- com.spotify.tests.CreateAndGetPlayListUsingReusableCalls -->
     </classes>
